@@ -1,0 +1,12 @@
+{
+  "project_name": "Python Boilerplate",
+  "project_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
+  "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "version": "0.1.0",
+  "author": "Raffaele Briganti",
+  "email": "raffaele@example.com",
+  "github_username": "maephisto666",
+  "copyright_year": "{% now 'utc', '%Y' %}",
+  "license": ["MIT", "Apache-2.0", "GPL-3.0", "No license"],
+  "command_line_interface": ["Argparse", "No command-line interface"]
+}

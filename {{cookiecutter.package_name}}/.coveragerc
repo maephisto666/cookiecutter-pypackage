@@ -1,0 +1,4 @@
+[run]
+omit =
+    # No coverage for the test classes
+    tests/*
