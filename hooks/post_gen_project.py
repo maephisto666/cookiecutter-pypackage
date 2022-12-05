@@ -19,9 +19,9 @@ def replace_poetry_env_vscode_settings(poetry_venv_path: str) -> None:
     
     print(f"Updating the file {vscode_settings_original_file_path.absolute()} with the right Poetry virtualenv path")
     
-    with vscode_settings_original_file_path.open(mode = 'r') as vscode_settings_original, vscode_settings_rendered_file_path.open(mode = 'a+') as vscode_settings_rendered:
+    with vscode_settings_original_file_path.open(mode = "r") as vscode_settings_original, vscode_settings_rendered_file_path.open(mode = "a+") as vscode_settings_rendered:
         for line in vscode_settings_original:
-            vscode_settings_rendered.write(line.replace('%%POETRY_VENV_PATH%%', poetry_venv_path))
+            vscode_settings_rendered.write(line.replace("%%POETRY_VENV_PATH%%", poetry_venv_path))
             
     vscode_settings_original_file_path.unlink()
     vscode_settings_rendered_file_path.rename(".vscode/settings.json")

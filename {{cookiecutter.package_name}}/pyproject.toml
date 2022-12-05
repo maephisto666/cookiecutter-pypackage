@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "{{cookiecutter.project_name}}"
+name = "{{cookiecutter.package_name}}"
 version = "{{cookiecutter.version}}"
 description = "{{cookiecutter.project_description}}"
 readme = "README.md"
 authors = ["{{cookiecutter.author}} <{{cookiecutter.email}}>"]
 license = "{{cookiecutter.license}}"
 packages = [
-  { include = "{{cookiecutter.project_name}}", from = "src" },
+  { include = "{{cookiecutter.package_name}}", from = "src" },
 ]
 
 [tool.poetry.dependencies]
