@@ -1,7 +1,8 @@
 {
-  "project_name": "Python Boilerplate",
+  "project_name": "python-boilerplate",
   "project_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
-  "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+  "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "friendly_name": "{{ cookiecutter.project_name.lower().replace('-', ' ').title() }}",
   "version": "0.1.0",
   "author": "Raffaele Briganti",
   "email": "raffaele@example.com",
